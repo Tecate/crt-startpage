@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<link rel="shortcut icon" type="image/png" href="favicon.png">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/root.css">
+		<script src="https://cdn.jsdelivr.net/jquery/3.0.0/jquery.min.js"></script>
+		<!-- <script type="text/javascript" src="https://www.google.com/jsapi"></script> -->
+		<script type="text/javascript" src="https://rss2json.com/gfapi.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
+		<script src="js/typed.js"></script>
+		<script src="js/marquee.js"></script>
+		<script src="js/startpage.js"></script>
+		<!-- <script src="js/jfeed.js"></script> -->
+		<script src="js/cycle2.js"></script>
+		<script src="js/cycle2-video.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$("#what")[0].play();
+		});
+    </script>
+	</head>
+	<body>
+		<div class="screen-container cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="30000" data-cycle-slides="> div" data-cycle-youtube-autostart=true>
+			<div class="page-container">
+				<div class="page-head">trinitron.hellco.net</div>
+				<div id="image-container">
+					<img class="page-image" src="img/colored-squares.gif">
+					<img class="page-image" src="img/test.gif">
+					<img class="page-image" src="img/columns.gif">
+					<img class="page-image" src="img/test2.gif">
+				</div>
+				<div class="width-remainder">
+					<h2>Arch News</h2>
+					<div id="feed"></div>
+					<span class="typed"></span>
+				</div>
+				<div id="weather">
+					
+				</div>
+				<div class="marquee">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</div>
+				<div id="time"></div>
+			</div>
+			<div class="page-container">
+				<div class="feed-container">
+					<div class="feed" id="p2-feed1">
+						<h2 class="hacker-news"><span>Hacker News</span></h2>
+					</div>
+					<div class="feed" id="p2-feed2">
+						<h2 class="slashdot"><span>Slashdot</span></h2>
+					</div>
+				</div>
+			</div>
+			<div class="page-container">
+				<img id="globe" src="img/sphere3.gif">
+				<div class="feed-container">
+					<div class="feed" id="p3-feed1">
+						<h2>World News</h2>
+					</div>
+					<img src="img/pink-vape.gif">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<!-- 				<video id="what" autoplay muted loop>
+					<source src="img/vape-sun.webm" type="video/webm">
+					Your browser does not support the video tag.
+				</video> -->

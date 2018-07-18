@@ -1,0 +1,32 @@
+#weather {
+	font-family: 'Ishmeria', sans-serif;
+	font-size: 20px;
+	bottom: 30px;
+	position: absolute;
+	// border: 1px solid white;
+}
+
+#weather ul {
+	list-style: none;
+	padding: 0px;
+}
+
+#weather li {
+	display: inline-block;
+	padding: 0px 10px;
+}
+
+#weather-temp {
+	text-transform: uppercase;
+	font-family: 'vcr_osd', sans-serif;
+	font-size: 26px;
+}
+
+#weather-location, #weather-forecast {
+	color: grey;
+}
+
+#weather-forecast {
+	font-family: 'vcr_osd', sans-serif;
+	font-size: 16px;
+}

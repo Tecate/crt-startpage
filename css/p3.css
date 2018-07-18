@@ -1,0 +1,9 @@
+.screen-container {
+	border: 1px solid white;
+}
+
+.typed-forecast {
+	white-space: pre-wrap;
+	font-family: 'Ishmeria', sans-serif;
+	font-size: 18px;
+}

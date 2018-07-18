@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'pf-arma-five';
+    src: url('../fonts/arma-five/pf_arma_five.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'vcr_osd';
+    src: url('../fonts/vcr-osd/vcr_osd_mono_1.001-webfont.woff2') format('woff2'),
+         url('../fonts/vcr-osd/vcr_osd_mono_1.001-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+        font-family:'Ishmeria';
+                src:url('../fonts/Ishmeria.eot');
+                src:url('../fonts/Ishmeria.eot?#iefix') format('embedded-opentype'),
+                                url('../fonts/Ishmeria.woff') format('woff'),
+                                url('../fonts/Ishmeria.ttf') format('truetype'),
+                                url('../fonts/Ishmeria.svg#Ishmeria') format('svg');
+        font-weight:normal;
+        font-style:normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+        @font-face {
+                font-family:'Ishmeria';
+                src: url('../fonts/Ishmeria.svg') format('svg');
+                font-weight:normal;
+                font-style:normal;
+        }
+}

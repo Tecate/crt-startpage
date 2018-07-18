@@ -1,0 +1,41 @@
+//how many images we have
+$slides: 4;
+
+// how much we want each slide to show
+$time_per_slide: 8;
+
+// total time needed for full animation
+$total_animation_time: $time_per_slide * $slides;
+
+#image-container{
+  width:300px;
+  height:250px;
+  overflow:hidden;
+  position:relative;
+  float: left;
+  background: url('../img/static.gif');
+  margin-right: 20px;
+}
+.page-image{
+  position:absolute;
+  animation:round #{$total_animation_time}s infinite;
+  opacity:0;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes round{   
+  25%{
+    opacity:1;
+  }
+  30%{
+    opacity:0;
+  }
+} 
+
+@for $index from 1 to $slides + 1{
+  #image-container img:nth-child(#{$index}){
+    animation-delay:#{$total_animation_time - $time_per_slide * $index}s
+  }
+}
+   

@@ -1,0 +1,256 @@
+@font-face {
+  font-family: 'pf-arma-five';
+  src: url("../fonts/arma-five/pf_arma_five.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'vcr_osd';
+  src: url("../fonts/vcr-osd/vcr_osd_mono_1.001-webfont.woff2") format("woff2"), url("../fonts/vcr-osd/vcr_osd_mono_1.001-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Ishmeria';
+  src: url("../fonts/Ishmeria.eot");
+  src: url("../fonts/Ishmeria.eot?#iefix") format("embedded-opentype"), url("../fonts/Ishmeria.woff") format("woff"), url("../fonts/Ishmeria.ttf") format("truetype"), url("../fonts/Ishmeria.svg#Ishmeria") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: 'Ishmeria';
+    src: url("../fonts/Ishmeria.svg") format("svg");
+    font-weight: normal;
+    font-style: normal; } }
+#weather {
+  font-family: 'Ishmeria', sans-serif;
+  font-size: 20px;
+  bottom: 30px;
+  position: absolute; }
+
+#weather ul {
+  list-style: none;
+  padding: 0px; }
+
+#weather li {
+  display: inline-block;
+  padding: 0px 10px; }
+
+#weather-temp {
+  text-transform: uppercase;
+  font-family: 'vcr_osd', sans-serif;
+  font-size: 26px; }
+
+#weather-location, #weather-forecast {
+  color: grey; }
+
+#weather-forecast {
+  font-family: 'vcr_osd', sans-serif;
+  font-size: 16px; }
+
+.typed {
+  font-family: 'Ishmeria', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase; }
+
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px solid #ccc;
+  background: black;
+  color: #caffc3;
+  font-family: 'Ishmeria', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0px; }
+
+#time {
+  font-family: 'vcr_osd', sans-serif;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background: #000;
+  padding: 0px 5px; }
+
+#image-container {
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  background: url("../img/static.gif");
+  margin-right: 20px; }
+
+.page-image {
+  position: absolute;
+  animation: round 32s infinite;
+  opacity: 0;
+  width: 100%;
+  height: 100%; }
+
+@keyframes round {
+  25% {
+    opacity: 1; }
+  30% {
+    opacity: 0; } }
+#image-container img:nth-child(1) {
+  animation-delay: 24s; }
+
+#image-container img:nth-child(2) {
+  animation-delay: 16s; }
+
+#image-container img:nth-child(3) {
+  animation-delay: 8s; }
+
+#image-container img:nth-child(4) {
+  animation-delay: 0s; }
+
+html, body {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%; }
+
+body {
+  background-size: 100% 100%;
+  background-color: #000;
+  color: white; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: 'vcr_osd', sans-serif; }
+
+#feed a:link, #feed a:active, #feed a:visited, .feed a:link, .feed a:active, .feed a:visited {
+  font-family: 'vcr_osd', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none; }
+
+.screen-container {
+  height: 480px;
+  width: 640px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0px auto; }
+
+.page-container {
+  height: 100%;
+  width: 100%;
+  background: #000;
+  position: relative; }
+
+.page-head {
+  text-transform: uppercase;
+  font-family: 'vcr_osd', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  color: orange;
+  animation: 8s head-glow linear infinite; }
+
+.width-remainder {
+  max-width: 300px;
+  display: inline-block;
+  word-wrap: break-word; }
+  .width-remainder h2 {
+    margin-top: 0px; }
+
+@keyframes head-glow {
+  0% {
+    color: #ff9900; }
+  50% {
+    color: #ffcc80; }
+  100% {
+    color: #ff9900; } }
+#feed {
+  font-family: 'pf-arma-five', times;
+  padding-bottom: 20px; }
+  #feed a {
+    display: block;
+    margin: 4px 4px;
+    font-family: 'pf-arma-five', times; }
+
+.bottom-50 {
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  background: url("../img/pink-vape.gif");
+  background-size: cover; }
+
+.feed-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%; }
+  .feed-container .feed {
+    flex-grow: 1 1 auto;
+    height: 50%;
+    width: 100%;
+    border-right: 1px solid grey;
+    padding: 20px;
+    padding-top: 0px; }
+    .feed-container .feed a:link {
+      padding: 7.5px 0px;
+      display: block; }
+    .feed-container .feed a:nth-of-type(odd) {
+      background: #1a1a1a; }
+    .feed-container .feed h2 {
+      margin-top: 0px; }
+    .feed-container .feed h2 span {
+      background: rgba(0, 0, 0, 0.5);
+      height: 100%;
+      display: inline-block; }
+    .feed-container .feed .hacker-news {
+      background: url("../img/red-circuit.gif"); }
+    .feed-container .feed .slashdot {
+      background: url("../img/vector-map-blue.gif"); }
+  .feed-container .feed:last-child {
+    border-right: 0px solid grey; }
+
+#p3-feed1 {
+  height: auto; }
+
+#globe {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 128px;
+  height: 128px;
+  mix-blend-mode: screen;
+  float: right;
+  background-blend-mode: color-dodge;
+  background-color: orange; }
+
+/*# sourceMappingURL=root.css.map */
